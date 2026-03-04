@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "people/index"
   get "msgboard/index"
   get "hello/index"
   get "hello", to: "hello#index"
