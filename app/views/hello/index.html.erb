@@ -1,1 +1,11 @@
+<% if flash[:notice] %>
+  <div class="alert alert-info" role="alert">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+
 <p><%= @msg %></p>
+<%= form_with url: hello_index_path do |f| %>
+  <%= f.text_field :name, value: @name %>
+  <%= f.submit "Submit" %>
+<% end %>
