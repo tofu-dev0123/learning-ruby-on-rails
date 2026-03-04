@@ -10,9 +10,11 @@
   <% @data.each do |obj| %>
     <tr>
       <td><%= obj.id %></td>
-      <td><%= obj.name %></td>
-      <td><%= obj.age %></td>
-      <td><%= obj.mail %></td>
+      <td>
+        <a href="/people/<%= obj.id %>">
+          <%= obj.name %>
+        </a>
+      </td>
     </tr>
   <% end %>
 </table>

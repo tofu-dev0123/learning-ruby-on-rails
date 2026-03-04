@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   post "msgboard", to: "msgboard#index"
   get "msgboard/index"
   post "msgboard/index"
+
+  get "people/:id", to: "people#show"
 end
